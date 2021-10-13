@@ -19,5 +19,6 @@ from fabiangram import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello-world/', views.hello_world)
+    path('hello-world/', views.hello_world),
+    path('hi/', views.hi)
 ]
