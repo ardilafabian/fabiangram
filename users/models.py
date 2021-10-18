@@ -15,13 +15,13 @@ class Profile(models.Model):
     phone_number = models.CharField(max_length=20, blank=True)
 
     """
-    Resolve pillow importing 
+    Resolve pillow importing """
     
     picture = models.ImageField(
         upload_to='users/pictures', 
         blank=True, 
         null=True
-    )"""
+    )
 
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
