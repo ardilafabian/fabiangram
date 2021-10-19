@@ -13,9 +13,6 @@ class Profile(models.Model):
     website = models.URLField(max_length=200, blank=True)
     biografy = models.TextField(blank=True)
     phone_number = models.CharField(max_length=20, blank=True)
-
-    """
-    Resolve pillow importing """
     
     picture = models.ImageField(
         upload_to='users/pictures', 
